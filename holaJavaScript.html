@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1> Hola mundo en JavaScript </h1>
+    <script>
+        //window.alert("Hola JavaScript");
+        //var nombre = window.prompt("Cual es tu nombre");
+        //window.confirm("Hola " + nombre + " quieres aprender mas de JS?");
+        //Secuencias de escape si uso comillas simples y adentro tambien 
+        window.document.write('<h1 style="color:red;"> Me gusta JavaScript</h1>');
+        window.console.log("Hola juan carlos");
+
+        var lenguajes = ['HTML', 'CSS', 'JavaScript', 'PHP'];
+        imprimir(lenguajes)
+
+        function imprimir(tabla)
+        {
+            document.write('<table>')         
+            for(var i = 0; i < lenguajes.length; i++)
+            {
+                document.write('<tr>')
+                document.write('<td style="border:solid">')
+                document.write(lenguajes[i] + '<br>');
+                document.write('</td>')
+                document.write('</tr>')
+            }
+            document.write('</table>')
+        }
+    </script>
+
+    <!--Tarea hacer un script para mostar las tablas de multiiplicar del 1 al 9 -->
+    <!--Una funcion para crear la  tabla arreglo de arreglos  y otra para imprimir-->
+    <!--La consola nos va a swervir para hacer prubas o para depurar solamnete-->
+    <!--Conviene cargar vhasta el final el javascpri para que cargue primero los elemntos de la pagina-->
+</body>
+</html>
